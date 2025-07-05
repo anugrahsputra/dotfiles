@@ -107,8 +107,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
-export PATH="$PATH:/opt/homebrew/Caskroom/flutter/3.32.5/flutter/bin"
 # aliases
 alias vim="nvim"
 alias vi="nvim"
@@ -116,7 +114,13 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias air="$HOME/tools/go/bin/air"
 alias bun="docker run --rm --init --ulimit memlock=-1:-1 oven/bun"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 source /opt/homebrew/opt/spaceship/spaceship.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="$PATH:/opt/homebrew/Caskroom/flutter/3.32.5/flutter/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -125,3 +129,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
