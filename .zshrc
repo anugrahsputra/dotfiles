@@ -9,11 +9,29 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
-SPACESHIP_PROMPT_DEFAULT_COLOR="#D8DEE9" # nord4
-SPACESHIP_DIR_COLOR="#88C0D0" # nord8
-SPACESHIP_GIT_BRANCH_COLOR="#A3BE8C" # nord14
-SPACESHIP_GIT_STATUS_COLOR="#BF616A" # nord11
-
+# Kanso Ink spaceship prompt colors
+SPACESHIP_PROMPT_DEFAULT_COLOR="#c5c9c7"     # Light foreground
+SPACESHIP_USER_COLOR="#87a987"               # Calm green
+SPACESHIP_DIR_COLOR="#7fb4ca"                # Soft blue
+SPACESHIP_GIT_BRANCH_COLOR="#c4746e"         # Muted red
+SPACESHIP_GIT_STATUS_COLOR="#e46876"         # Bright red
+SPACESHIP_EXEC_TIME_COLOR="#c4b28a"          # Sand/beige
+SPACESHIP_JOBS_COLOR="#938aa9"               # Soft purple
+SPACESHIP_EXIT_CODE_COLOR="#e46876"          # Alert red
+SPACESHIP_TIME_COLOR="#8ea4a2"               # Cool teal
+SPACESHIP_CHAR_COLOR_SUCCESS="#8a9a7b"       # Pale green
+SPACESHIP_CHAR_COLOR_FAILURE="#e46876"       # Bright red
+SPACESHIP_PROMPT_ORDER=(
+  user
+  dir
+  git
+  exec_time
+  jobs
+  exit_code
+  time
+  line_sep
+  char
+)
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -110,17 +128,17 @@ source $ZSH/oh-my-zsh.sh
 # aliases
 alias vim="nvim"
 alias vi="nvim"
+alias air="$HOME/go/bin/air"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
-alias air="$HOME/tools/go/bin/air"
 alias bun="docker run --rm --init --ulimit memlock=-1:-1 oven/bun"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 source /opt/homebrew/opt/spaceship/spaceship.zsh
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+export PATH="$HOME/go/bin:$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
-export PATH="$PATH:/opt/homebrew/Caskroom/flutter/3.32.5/flutter/bin"
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="/opt/homebrew/Caskroom/flutter/3.32.5/flutter/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -130,3 +148,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PATH="$PATH":"$HOME/.pub-cache/bin"
