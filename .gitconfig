@@ -5,5 +5,5 @@
 # Please adapt and uncomment the following lines:
 #	name = anugrahsputra
 #	email = anugrahsputra@gmail.com
-[core]
-	excludesfile = /Users/downormal/.gitignore
+[init]
+	defaultBranch = main

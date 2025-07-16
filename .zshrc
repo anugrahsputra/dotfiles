@@ -21,17 +21,17 @@ SPACESHIP_EXIT_CODE_COLOR="#e46876"          # Alert red
 SPACESHIP_TIME_COLOR="#8ea4a2"               # Cool teal
 SPACESHIP_CHAR_COLOR_SUCCESS="#8a9a7b"       # Pale green
 SPACESHIP_CHAR_COLOR_FAILURE="#e46876"       # Bright red
-SPACESHIP_PROMPT_ORDER=(
-  user
-  dir
-  git
-  exec_time
-  jobs
-  exit_code
-  time
-  line_sep
-  char
-)
+# SPACESHIP_PROMPT_ORDER=(
+#   user
+#   dir
+#   git
+#   exec_time
+#   jobs
+#   exit_code
+#   time
+#   line_sep
+#   char
+# )
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -132,6 +132,22 @@ alias air="$HOME/go/bin/air"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias bun="docker run --rm --init --ulimit memlock=-1:-1 oven/bun"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# pomodoro stuff
+alias work="timer 50m && terminal-notifier -message 'Pomodoro'\
+        -title 'Work Timer is up! Take a Break 😊'\
+        -appIcon '~/Pictures/pumpkin.png'\
+        -sound Crystal"
+        
+alias rest="timer 10m && terminal-notifier -message 'Pomodoro'\
+        -title 'Break is over! Get back to work 😬'\
+        -appIcon '~/Pictures/pumpkin.png'\
+        -sound Crystal"
+
+alias longrest="timer 20m && terminal-notifier -message 'Pomodoro'\
+        -title 'Long Break is over! Get back to work 😬'\
+        -appIcon '~/Pictures/pumpkin.png'\
+        -sound Crystal"
 
 source /opt/homebrew/opt/spaceship/spaceship.zsh
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
