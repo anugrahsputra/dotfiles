@@ -130,7 +130,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias air="$HOME/go/bin/air"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
-alias bun="docker run --rm --init --ulimit memlock=-1:-1 oven/bun"
+# alias bun="docker run --rm --init --ulimit memlock=-1:-1 oven/bun"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # pomodoro stuff
@@ -165,3 +165,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+. "$HOME/.cargo/env"
