@@ -7,10 +7,9 @@ shell-integration-features = no-cursor
 
 cursor-style = block
 
-
 font-size = 12
 font-thicken = true
-font-family = "Monaspace Argon Frozen"
+font-family = "Monaspace Neon Frozen"
 
 palette = 0=#14171d
 palette = 1=#c4746e
@@ -29,7 +28,6 @@ palette = 13=#938aa9
 palette = 14=#7aa89f
 palette = 15=#c5c9c7
 
-background-opacity = 0.86
 background-blur-radius = 80
 background = #14171d
 foreground = #c5c9c7
