@@ -154,7 +154,8 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="$HOME/go/bin:$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
-export PATH="/opt/homebrew/Caskroom/flutter/3.32.5/flutter/bin:$PATH"
+# export PATH="/opt/homebrew/Caskroom/flutter/3.32.5/flutter/bin:$PATH"
+export PATH="$PATH:$HOME/fvm/default/bin"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -166,3 +167,12 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 . "$HOME/.cargo/env"
+
+export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/downormal/.dart-cli-completion/zsh-config.zsh ]] && . /Users/downormal/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
