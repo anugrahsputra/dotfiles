@@ -1,0 +1,116 @@
+
+" Plugins
+" Plug 'preservim/nerdtree'
+Plug 'terryma/vim-multiple-cursors'
+" Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-commentary'
+" Plug 'easymotion/vim-easymotion'
+
+" Set leader key
+let mapleader = " "
+
+" General options
+set showcmd
+set scrolloff=10
+set number
+set relativenumber
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set clipboard=unnamedplus
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set autoindent
+set breakindent
+set mouse=a
+set nowrap
+set signcolumn=yes
+set visualbell
+set noerrorbells
+set ideajoin
+" set timeoutlen=500
+
+" IdeaVim specific settings
+set ideavim.multicursor
+set commentary
+set surround
+set easymotion
+set notimeout
+set NERDTree
+set highlightedyank
+
+" Insert mode mappings
+" inoremap jj <esc>
+
+" Normal mode mappings
+nnoremap ; :
+nnoremap q :q<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>b :NERDTreeToggle<CR>
+nnoremap <leader>e :NERDTreeFocus<CR>
+nnoremap <Tab> :tabnext<CR>
+nnoremap <S-Tab> :tabprev<CR>
+nnoremap ss :split<CR>
+nnoremap sv :vsplit<CR>
+nnoremap sh <C-w>h
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap <leader>a :action ReformatCode<CR>
+nnoremap <leader>n :nohl<CR>
+nnoremap L <C-d>
+nnoremap H <C-u>
+nnoremap K :action EditorStartNewLine<CR>
+nnoremap fo zo
+nnoremap fc zc
+
+
+nmap <leader>aa :action OptimizeImports<CR>:action ReformatCode<CR>
+nmap <leader>r <Action>(RenameElement)
+nmap <leader>d <Action>(Debug)
+nmap <leader>s <Action>(Stop)
+nmap <leader>R <Action>(Run)
+nmap <leader>t <Action>(ActivateTerminalToolWindow)
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gy <Action>(GotoTypeDeclaration)
+nmap <leader>gi <Action>(GotoImplementation)
+nmap <leader>gu <Action>(ShowUsages)
+nmap <leader>gt <Action>(GotoTest)
+nmap <leader>gb <Action>(Back)
+nmap <leader>gf <Action>(Forward)
+map <Leader>ff <action>(com.mituuz.fuzzier.Fuzzier)
+map <Leader>mf <action>(com.mituuz.fuzzier.FuzzyMover)
+map <Leader>gf <action>(com.mituuz.fuzzier.FuzzierVCS)
+map <Leader>fg <action>(com.mituuz.fuzzier.FuzzyGrep)
+map <leader>ca <action>(ShowIntentionActions)
+map <leader>as <action>(SearchEverywhere)
+
+" Visual mode mappings
+vnoremap L <C-d>
+vnoremap H <C-u>
+
+" Multiple cursors mappings
+map mc <A-n>
+map mx <A-x>
+map mp <A-p>
+
+" NERDTree settings
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
+let g:NERDTreeQuitOnOpen=1
+
+
+" Additional useful mappings
+nnoremap <leader>p :action SearchEverywhere<CR>
+nnoremap <leader>h :action HideAllWindows<CR>
+nnoremap <C-p> :action ParameterInfo<CR>
+nnoremap <leader>k :action ShowErrorDescription<CR>
+nnoremap <leader>x :action ShowIntentionActions<CR>
+
+nnoremap <A-h> <C-w><
+nnoremap <A-l> <C-w>>
+nnoremap <A-k> <C-w>+
+nnoremap <A-j> <C-w>-
