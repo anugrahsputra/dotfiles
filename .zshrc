@@ -9,18 +9,19 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
-# Kanso Ink spaceship prompt colors
-SPACESHIP_PROMPT_DEFAULT_COLOR="#c5c9c7"     # Light foreground
-SPACESHIP_USER_COLOR="#87a987"               # Calm green
-SPACESHIP_DIR_COLOR="#7fb4ca"                # Soft blue
-SPACESHIP_GIT_BRANCH_COLOR="#c4746e"         # Muted red
-SPACESHIP_GIT_STATUS_COLOR="#e46876"         # Bright red
-SPACESHIP_EXEC_TIME_COLOR="#c4b28a"          # Sand/beige
-SPACESHIP_JOBS_COLOR="#938aa9"               # Soft purple
-SPACESHIP_EXIT_CODE_COLOR="#e46876"          # Alert red
-SPACESHIP_TIME_COLOR="#8ea4a2"               # Cool teal
-SPACESHIP_CHAR_COLOR_SUCCESS="#8a9a7b"       # Pale green
-SPACESHIP_CHAR_COLOR_FAILURE="#e46876"       # Bright red
+
+# ── Oxocarbon Palette for Spaceship ───────────────────────────────
+SPACESHIP_PROMPT_DEFAULT_COLOR="#C6C6C6"     # Neutral foreground
+SPACESHIP_USER_COLOR="#42BE65"               # Green (user/host)
+SPACESHIP_DIR_COLOR="#78A9FF"                # Blue (directory path)
+SPACESHIP_GIT_BRANCH_COLOR="#BE95FF"         # Purple (git branch)
+SPACESHIP_GIT_STATUS_COLOR="#FF8389"         # Soft red (git changes)
+SPACESHIP_EXEC_TIME_COLOR="#F1C21B"          # Yellow (execution time)
+SPACESHIP_JOBS_COLOR="#3DDBD9"               # Cyan (background jobs)
+SPACESHIP_EXIT_CODE_COLOR="#DA1E28"          # Red (error indicator)
+SPACESHIP_TIME_COLOR="#82CFFF"               # Light blue (clock)
+SPACESHIP_CHAR_COLOR_SUCCESS="#42BE65"       # Green (prompt symbol)
+SPACESHIP_CHAR_COLOR_FAILURE="#DA1E28"       # Red (prompt symbol error)
 # SPACESHIP_PROMPT_ORDER=(
 #   user
 #   dir
@@ -132,6 +133,7 @@ alias air="$HOME/go/bin/air"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 # alias bun="docker run --rm --init --ulimit memlock=-1:-1 oven/bun"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias flu="fvm flutter"
 
 # pomodoro stuff
 alias work="timer 50m && terminal-notifier -message 'Pomodoro'\
