@@ -178,3 +178,6 @@ export PATH="$JAVA_HOME/bin:$PATH"
 [[ -f /Users/downormal/.dart-cli-completion/zsh-config.zsh ]] && . /Users/downormal/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/Users/downormal/.shorebird/bin:$PATH"
