@@ -181,3 +181,5 @@ export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/Users/downormal/.shorebird/bin:$PATH"
+
+export PATH=$PATH:/Users/downormal/.spicetify

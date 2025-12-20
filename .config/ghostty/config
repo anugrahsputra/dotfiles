@@ -9,29 +9,33 @@ cursor-style = block
 
 font-size = 13
 font-thicken = true
-font-family = "Jetbrains Mono"
+font-family = "Liga SFMono Nerd Font"
 
-palette = 0=#262626
-palette = 1=#DA1E28
-palette = 2=#42BE65
-palette = 3=#F1C21B
-palette = 4=#4589FF
-palette = 5=#BE95FF
-palette = 6=#3DDBD9
-palette = 7=#C6C6C6
-palette = 8=#393939
-palette = 9=#FF8389
-palette = 10=#6FDC8C
-palette = 11=#FFD600
-palette = 12=#78A9FF
-palette = 13=#D4BBFF
-palette = 14=#82CFFF
-palette = 15=#F4F4F4
+# --- Rosé Pine Palette (ANSI only) ---
+palette = 0=#191724   
+palette = 1=#eb6f92   
+palette = 2=#31748f   
+palette = 3=#f6c177   
+palette = 4=#9ccfd8   
+palette = 5=#c4a7e7   
+palette = 6=#ebbcba   
+palette = 7=#e0def4   
 
-background-opacity = 0.7
+palette = 8=#26233a
+palette = 9=#eb6f92
+palette = 10=#31748f
+palette = 11=#f6c177
+palette = 12=#9ccfd8
+palette = 13=#c4a7e7
+palette = 14=#ebbcba
+palette = 15=#f4f4f4  
+
+# --- ORIGINAL UI (unchanged) ---
 background = #161616
 foreground = #F4F4F4
 selection-background = #393939
 selection-foreground = #F4F4F4
+background-opacity = 1
 background-blur-radius = 60
+
 cursor-color = #c5c9c7

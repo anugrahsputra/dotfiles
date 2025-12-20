@@ -38,5 +38,6 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^WhatsApp$" manage=off
-yabai -m rule --add app="^qemu-system-aarch64$" manage=on
+yabai -m rule --add app="^qemu-system-aarch64$" manage=on ignore-role=on
+yabai -m rule --add app="^BlueStacks$" manage=on
 
