@@ -10,18 +10,20 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
 
-# ── Oxocarbon Palette for Spaceship ───────────────────────────────
-SPACESHIP_PROMPT_DEFAULT_COLOR="#C6C6C6"     # Neutral foreground
-SPACESHIP_USER_COLOR="#42BE65"               # Green (user/host)
-SPACESHIP_DIR_COLOR="#78A9FF"                # Blue (directory path)
-SPACESHIP_GIT_BRANCH_COLOR="#BE95FF"         # Purple (git branch)
-SPACESHIP_GIT_STATUS_COLOR="#FF8389"         # Soft red (git changes)
-SPACESHIP_EXEC_TIME_COLOR="#F1C21B"          # Yellow (execution time)
-SPACESHIP_JOBS_COLOR="#3DDBD9"               # Cyan (background jobs)
-SPACESHIP_EXIT_CODE_COLOR="#DA1E28"          # Red (error indicator)
-SPACESHIP_TIME_COLOR="#82CFFF"               # Light blue (clock)
-SPACESHIP_CHAR_COLOR_SUCCESS="#42BE65"       # Green (prompt symbol)
-SPACESHIP_CHAR_COLOR_FAILURE="#DA1E28"       # Red (prompt symbol error)
+# ── Catppuccin Macchiato Palette for Spaceship ─────────────────────
+
+SPACESHIP_PROMPT_DEFAULT_COLOR="#cad3f5"     # Text
+SPACESHIP_USER_COLOR="#a6da95"               # Green (user/host)
+SPACESHIP_DIR_COLOR="#8aadf4"                # Blue (directory)
+SPACESHIP_GIT_BRANCH_COLOR="#c6a0f6"         # Mauve (git branch)
+SPACESHIP_GIT_STATUS_COLOR="#ed8796"         # Red (git changes)
+SPACESHIP_EXEC_TIME_COLOR="#eed49f"          # Yellow (exec time)
+SPACESHIP_JOBS_COLOR="#8bd5ca"               # Teal (jobs)
+SPACESHIP_EXIT_CODE_COLOR="#ed8796"          # Red (error)
+SPACESHIP_TIME_COLOR="#f4dbd6"               # Rosewater (clock)
+
+SPACESHIP_CHAR_COLOR_SUCCESS="#a6da95"       # Green prompt
+SPACESHIP_CHAR_COLOR_FAILURE="#ed8796"       # Red prompt
 # SPACESHIP_PROMPT_ORDER=(
 #   user
 #   dir

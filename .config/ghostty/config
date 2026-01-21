@@ -1,41 +1,45 @@
+# --- Typography & Layout ---
 adjust-underline-position = 40%
 adjust-underline-thickness = -60%
 adjust-cell-height = 35%
-
-shell-integration = zsh
-shell-integration-features = no-cursor
-
-cursor-style = block
 
 font-size = 13
 font-thicken = true
 font-family = "Liga SFMono Nerd Font"
 
-# --- Rosé Pine Palette (ANSI only) ---
-palette = 0=#191724   
-palette = 1=#eb6f92   
-palette = 2=#31748f   
-palette = 3=#f6c177   
-palette = 4=#9ccfd8   
-palette = 5=#c4a7e7   
-palette = 6=#ebbcba   
-palette = 7=#e0def4   
+# --- Shell ---
+shell-integration = zsh
+shell-integration-features = no-cursor
 
-palette = 8=#26233a
-palette = 9=#eb6f92
-palette = 10=#31748f
-palette = 11=#f6c177
-palette = 12=#9ccfd8
-palette = 13=#c4a7e7
-palette = 14=#ebbcba
-palette = 15=#f4f4f4  
+cursor-style = block
 
-# --- ORIGINAL UI (unchanged) ---
-background = #161616
-foreground = #F4F4F4
-selection-background = #393939
-selection-foreground = #F4F4F4
+# --- Catppuccin Macchiato Palette (ANSI) ---
+palette = 0=#494d64   
+palette = 1=#ed8796   
+palette = 2=#a6da95   
+palette = 3=#eed49f   
+palette = 4=#8aadf4   
+palette = 5=#c6a0f6   
+palette = 6=#8bd5ca   
+palette = 7=#cad3f5   
+
+palette = 8=#5b6078   
+palette = 9=#ed8796
+palette = 10=#a6da95
+palette = 11=#eed49f
+palette = 12=#8aadf4
+palette = 13=#c6a0f6
+palette = 14=#8bd5ca
+palette = 15=#ffffff
+
+# --- UI Colors (Macchiato) ---
+background = #24273a
+foreground = #cad3f5
+
+selection-background = #5b6078
+selection-foreground = #cad3f5
+
 background-opacity = 1
 background-blur-radius = 60
 
-cursor-color = #c5c9c7
+cursor-color = #f4dbd6

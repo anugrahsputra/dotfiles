@@ -5,30 +5,29 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 10px
-yabai -m config top_padding 4
-yabai -m config bottom_padding 4
-yabai -m config left_padding 4
-yabai -m config right_padding 4
-yabai -m config window_gap 4
+yabai -m config top_padding 10
+yabai -m config bottom_padding 10
+yabai -m config left_padding 10
+yabai -m config right_padding 10
+yabai -m config window_gap 10
+
+yabai -m config window_animation_duration 0.15
+yabai -m config window_animation_easing ease_out_cubic
 
 # -- mouse settings --
-#
+
+# mouse follows window/display focus
 yabai -m config focus_follows_mouse autofocus
 yabai -m config focus_follows_mouse autoraise
-
-# center mouse on window with focus
 # yabai -m config mouse_follows_focus on
 
 # modifier for clicking and dragging with mouse
 yabai -m config mouse_modifier alt
-# set modifier + left-click drag to move window
 yabai -m config mouse_action1 move
-# set modifier + right-click drag to resize window
 yabai -m config mouse_action2 resize
 
-# when window is dropped in center of another window, swap them (on edges it will split it)
+# when window is dropped in center of another window, swap them
 yabai -m mouse_drop_action swap
-
 
 yabai -m rule --add app="^Simulator$" manage=on
 # disable specific apps
@@ -40,4 +39,6 @@ yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^WhatsApp$" manage=off
 yabai -m rule --add app="^qemu-system-aarch64$" manage=on ignore-role=on
 yabai -m rule --add app="^BlueStacks$" manage=on
+
+borders active_color=0xff8aadf4 inactive_color=0xff363a4f width=5.0 style=round hidpi=on &
 
