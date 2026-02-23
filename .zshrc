@@ -10,20 +10,22 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
 
-# ── Catppuccin Macchiato Palette for Spaceship ─────────────────────
+# ── Ayu Dark Palette for Spaceship ──────────────────────────────────
 
-SPACESHIP_PROMPT_DEFAULT_COLOR="#cad3f5"     # Text
-SPACESHIP_USER_COLOR="#a6da95"               # Green (user/host)
-SPACESHIP_DIR_COLOR="#8aadf4"                # Blue (directory)
-SPACESHIP_GIT_BRANCH_COLOR="#c6a0f6"         # Mauve (git branch)
-SPACESHIP_GIT_STATUS_COLOR="#ed8796"         # Red (git changes)
-SPACESHIP_EXEC_TIME_COLOR="#eed49f"          # Yellow (exec time)
-SPACESHIP_JOBS_COLOR="#8bd5ca"               # Teal (jobs)
-SPACESHIP_EXIT_CODE_COLOR="#ed8796"          # Red (error)
-SPACESHIP_TIME_COLOR="#f4dbd6"               # Rosewater (clock)
+SPACESHIP_PROMPT_DEFAULT_COLOR="#b3b1ad"     # foreground
+SPACESHIP_USER_COLOR="#b8cc52"               # green
+SPACESHIP_DIR_COLOR="#36a3d9"                # blue
+SPACESHIP_GIT_BRANCH_COLOR="#f07178"         # magenta/red accent
+SPACESHIP_GIT_STATUS_COLOR="#ff3333"         # red
+SPACESHIP_EXEC_TIME_COLOR="#e6b450"          # yellow
+SPACESHIP_JOBS_COLOR="#95e6cb"               # cyan
+SPACESHIP_EXIT_CODE_COLOR="#ff3333"          # red
+SPACESHIP_TIME_COLOR="#e6e1cf"               # bright foreground
 
-SPACESHIP_CHAR_COLOR_SUCCESS="#a6da95"       # Green prompt
-SPACESHIP_CHAR_COLOR_FAILURE="#ed8796"       # Red prompt
+SPACESHIP_CHAR_COLOR_SUCCESS="#b8cc52"       # green prompt
+SPACESHIP_CHAR_COLOR_FAILURE="#ff3333"       # red prompt
+
+# Optional (keep if you use custom order)
 # SPACESHIP_PROMPT_ORDER=(
 #   user
 #   dir
@@ -185,6 +187,10 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/Users/downormal/.shorebird/bin:$PATH"
 
 export PATH=$PATH:/Users/downormal/.spicetify
+<<<<<<< Updated upstream
 
 # Added by GitButler installer
 eval "$(but completions zsh)"
+=======
+export PATH="/Users/user/.shorebird/bin:$PATH"
+>>>>>>> Stashed changes
