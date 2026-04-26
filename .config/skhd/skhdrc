@@ -6,11 +6,8 @@ ctrl - k : yabai -m window --focus north
 ctrl - h : yabai -m window --focus west
 ctrl - l : yabai -m window --focus east
 
-# focus left monitor
-ctrl - a : yabai -m display --focus west
-
-# focus right monitor
-ctrl - s : yabai -m display --focus east
+alt - a : yabai -m display --focus west
+alt - b : yabai -m display --focus east
 
 # -- Modifying the Layout --
 

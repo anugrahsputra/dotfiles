@@ -187,10 +187,3 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/Users/downormal/.shorebird/bin:$PATH"
 
 export PATH=$PATH:/Users/downormal/.spicetify
-<<<<<<< Updated upstream
-
-# Added by GitButler installer
-eval "$(but completions zsh)"
-=======
-export PATH="/Users/user/.shorebird/bin:$PATH"
->>>>>>> Stashed changes

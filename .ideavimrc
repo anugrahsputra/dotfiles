@@ -94,9 +94,9 @@ vnoremap L <C-d>
 vnoremap H <C-u>
 
 " Multiple cursors mappings
-map mc <A-n>
-map mx <A-x>
-map mp <A-p>
+map <C-n> <A-n>
+map <C-x> <A-x>
+map <C-p> <A-p>
 
 " NERDTree settings
 let g:NERDTreeMapActivateNode='l'
@@ -115,3 +115,4 @@ nnoremap <A-h> <C-w><
 nnoremap <A-l> <C-w>>
 nnoremap <A-k> <C-w>+
 nnoremap <A-j> <C-w>-
+set clipboard^=ideaput
