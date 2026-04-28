@@ -15,41 +15,42 @@ cursor-style = block
 unfocused-split-opacity = 0.55
 split-divider-color = #e6b450
 
-# --- Ayu Dark Palette (ANSI) ---
-palette = 0=#0a0e14   
-palette = 1=#ff3333   
-palette = 2=#b8cc52   
-palette = 3=#e6b450   
-palette = 4=#36a3d9   
-palette = 5=#f07178   
-palette = 6=#95e6cb   
-palette = 7=#b3b1ad   
+# Forces bold text to use the bright color palette
+bold-is-bright = true
 
-palette = 8=#4d5566   
-palette = 9=#ff3333
-palette = 10=#b8cc52
-palette = 11=#e6b450
-palette = 12=#36a3d9
-palette = 13=#f07178
-palette = 14=#95e6cb
-palette = 15=#e6e1cf  
+# Background and foreground
+background = #101010
+foreground = #ffffff
 
-# --- UI Colors (Ayu Dark) ---
-background = #0a0e14
-foreground = #b3b1ad
+# Cursor colors
+cursor-color = #b0b0b0
+cursor-text = #101010
 
-selection-background = #253340
-selection-foreground = #e6e1cf
+# Selection colors
+selection-background = #272727
+selection-foreground = #b0b0b0
 
-background-opacity = 1
-background-blur-radius = 60
-
-cursor-color = #e6b450
+# ANSI color palette (0-15)
+palette = 0=#101010
+palette = 1=#ff7676
+palette = 2=#a3d6a3
+palette = 3=#ffffff
+palette = 4=#b3b3b3
+palette = 5=#f4b8e4
+palette = 6=#fafafa
+palette = 7=#a5adce
+palette = 8=#50585d
+palette = 9=#ff5733
+palette = 10=#86cd82
+palette = 11=#d9ba73
+palette = 12=#ffffff
+palette = 13=#f2a4db
+palette = 14=#5abfb5
+palette = 15=#b5bfe2
 
 macos-titlebar-style = hidden
 macos-option-as-alt = true
 mouse-hide-while-typing = true
-
 
 confirm-close-surface = false
 window-decoration = auto
@@ -58,3 +59,6 @@ window-decoration = auto
 window-padding-balance = true
 
 macos-option-as-alt = true
+
+background-opacity = 0.9
+background-blur = true
