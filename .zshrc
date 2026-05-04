@@ -10,24 +10,24 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
 
-# ── Koda Palette for Spaceship ─────────────────────
+# ── Koda Dark Flat Palette ─────────────────────────
 
-SPACESHIP_PROMPT_DEFAULT_COLOR="#b0b0b0"   # fg
+SPACESHIP_PROMPT_DEFAULT_COLOR="#b0b0b0"
 
-SPACESHIP_USER_COLOR="#86cd82"             # success
-SPACESHIP_DIR_COLOR="#5abfb5"              # cyan (clean + readable)
+SPACESHIP_USER_COLOR="#b0b0b0"
+SPACESHIP_DIR_COLOR="#ffffff"              # main focus
 
-SPACESHIP_GIT_BRANCH_COLOR="#f2a4db"       # pink (context)
-SPACESHIP_GIT_STATUS_COLOR="#ff7676"       # danger
+SPACESHIP_GIT_BRANCH_COLOR="#b0b0b0"
+SPACESHIP_GIT_STATUS_COLOR="#50585d"
 
-SPACESHIP_EXEC_TIME_COLOR="#d9ba73"        # warning
-SPACESHIP_JOBS_COLOR="#5abfb5"             # cyan
+SPACESHIP_EXEC_TIME_COLOR="#50585d"
+SPACESHIP_JOBS_COLOR="#50585d"
 
-SPACESHIP_EXIT_CODE_COLOR="#ff7676"        # danger
-SPACESHIP_TIME_COLOR="#50585d"             # comment (subtle)
+SPACESHIP_EXIT_CODE_COLOR="#ffffff"        # only pops when needed
+SPACESHIP_TIME_COLOR="#50585d"
 
-SPACESHIP_CHAR_COLOR_SUCCESS="#86cd82"     # success
-SPACESHIP_CHAR_COLOR_FAILURE="#ff7676"     # danger
+SPACESHIP_CHAR_COLOR_SUCCESS="#ffffff"
+SPACESHIP_CHAR_COLOR_FAILURE="#ffffff"
 
 # Optional (keep if you use custom order)
 # SPACESHIP_PROMPT_ORDER=(
