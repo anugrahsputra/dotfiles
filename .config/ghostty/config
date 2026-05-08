@@ -1,3 +1,6 @@
+custom-shader = shaders/cursor_tail.glsl
+custom-shader = shaders/cursor_warp.glsl
+
 # --- Typography & Layout ---
 adjust-underline-position = 40%
 adjust-underline-thickness = -60%
