@@ -1,4 +1,3 @@
-custom-shader = shaders/cursor_tail.glsl
 custom-shader = shaders/cursor_warp.glsl
 
 # --- Typography & Layout ---
@@ -8,7 +7,7 @@ adjust-cell-height = 35%
 
 font-size = 13
 font-thicken = true
-font-family = "JetBrains Mono"
+font-family = "JetBrainsMono Nerd Font"
 
 # --- Shell ---
 shell-integration = zsh
@@ -63,5 +62,5 @@ window-padding-balance = true
 
 macos-option-as-alt = true
 
-background-opacity = 0.9
+background-opacity = 0.8
 background-blur = true

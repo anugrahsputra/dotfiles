@@ -142,6 +142,7 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 # alias bun="docker run --rm --init --ulimit memlock=-1:-1 oven/bun"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ff="fvm flutter"
+alias ffd="fvm dart"
 
 # pomodoro stuff
 alias work="timer 50m && terminal-notifier -message 'Pomodoro'\
@@ -191,3 +192,7 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/Users/downormal/.shorebird/bin:$PATH"
 
 export PATH=$PATH:/Users/downormal/.spicetify
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/downormal/.local/bin:$PATH"
