@@ -56,11 +56,11 @@ mouse-hide-while-typing = true
 
 confirm-close-surface = false
 window-decoration = auto
-# window-padding-x = 8
-# window-padding-y = 8
+window-padding-x = 8
+window-padding-y = 8
 window-padding-balance = true
 
 macos-option-as-alt = true
 
-background-opacity = 0.8
-background-blur = true
+background-opacity = 0.9
+background-blur = false
