@@ -143,6 +143,10 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ff="fvm flutter"
 alias ffd="fvm dart"
+alias dfa="dotfiles add"
+alias dfs="dotfiles status"
+alias dfc="dotfiles commit"
+alias dfp="dotfiles push"
 
 # pomodoro stuff
 alias work="timer 50m && terminal-notifier -message 'Pomodoro'\
