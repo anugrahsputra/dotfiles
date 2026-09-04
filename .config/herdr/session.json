@@ -1,0 +1,263 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w3",
+      "custom_name": "memoriesspacema",
+      "identity_cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-ma",
+      "public_pane_numbers": {
+        "7": 11,
+        "29": 19,
+        "9": 10,
+        "6": 4,
+        "4": 1,
+        "36": 20
+      },
+      "next_public_pane_number": 21,
+      "public_tab_numbers": [
+        1,
+        2,
+        4
+      ],
+      "next_public_tab_number": 5,
+      "tabs": [
+        {
+          "custom_name": "editor",
+          "layout": {
+            "Split": {
+              "direction": "Vertical",
+              "ratio": 0.8000001,
+              "first": {
+                "Split": {
+                  "direction": "Horizontal",
+                  "ratio": 0.65000004,
+                  "first": {
+                    "Pane": 4
+                  },
+                  "second": {
+                    "Pane": 36
+                  }
+                }
+              },
+              "second": {
+                "Pane": 6
+              }
+            }
+          },
+          "panes": {
+            "36": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-ma"
+            },
+            "4": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-ma",
+              "label": "editor"
+            },
+            "6": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-ma",
+              "label": "console"
+            }
+          },
+          "zoomed": false,
+          "focused": 4,
+          "root_pane": 4
+        },
+        {
+          "custom_name": "agents",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 7
+              },
+              "second": {
+                "Pane": 29
+              }
+            }
+          },
+          "panes": {
+            "7": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-ma",
+              "label": "planner"
+            },
+            "29": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-ma",
+              "label": "executor"
+            }
+          },
+          "zoomed": false,
+          "focused": 29,
+          "root_pane": 7
+        },
+        {
+          "custom_name": "git",
+          "layout": {
+            "Pane": 9
+          },
+          "panes": {
+            "9": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-ma"
+            }
+          },
+          "zoomed": false,
+          "focused": 9,
+          "root_pane": 9
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w6",
+      "custom_name": "memoriesspacebe",
+      "identity_cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-be",
+      "public_pane_numbers": {
+        "10": 1,
+        "11": 4,
+        "12": 2,
+        "13": 3,
+        "32": 8,
+        "35": 9
+      },
+      "next_public_pane_number": 10,
+      "public_tab_numbers": [
+        1,
+        2,
+        4
+      ],
+      "next_public_tab_number": 5,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Split": {
+              "direction": "Vertical",
+              "ratio": 0.75000006,
+              "first": {
+                "Split": {
+                  "direction": "Horizontal",
+                  "ratio": 0.65000004,
+                  "first": {
+                    "Pane": 10
+                  },
+                  "second": {
+                    "Pane": 11
+                  }
+                }
+              },
+              "second": {
+                "Pane": 12
+              }
+            }
+          },
+          "panes": {
+            "10": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-be",
+              "label": "editor"
+            },
+            "12": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-be"
+            },
+            "11": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-be"
+            }
+          },
+          "zoomed": true,
+          "focused": 10,
+          "root_pane": 10
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 13
+          },
+          "panes": {
+            "13": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-be",
+              "label": "planner"
+            }
+          },
+          "zoomed": false,
+          "focused": 13,
+          "root_pane": 13
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 32
+              },
+              "second": {
+                "Pane": 35
+              }
+            }
+          },
+          "panes": {
+            "35": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-be",
+              "label": "executor"
+            },
+            "32": {
+              "cwd": "/Users/downormal/Dev/projects/MemoriesSpace/memories-space-be",
+              "label": "planner"
+            }
+          },
+          "zoomed": false,
+          "focused": 32,
+          "root_pane": 32
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w8",
+      "custom_name": null,
+      "identity_cwd": "/Users/downormal/.config/nvim",
+      "public_pane_numbers": {
+        "40": 4,
+        "37": 1
+      },
+      "next_public_pane_number": 5,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 37
+              },
+              "second": {
+                "Pane": 40
+              }
+            }
+          },
+          "panes": {
+            "40": {
+              "cwd": "/Users/downormal/.config/nvim"
+            },
+            "37": {
+              "cwd": "/Users/downormal/.config/nvim"
+            }
+          },
+          "zoomed": false,
+          "focused": 37,
+          "root_pane": 37
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 2,
+  "selected": 2,
+  "sidebar_width": 26,
+  "sidebar_section_split": 0.5,
+  "collapsed_space_keys": []
+}

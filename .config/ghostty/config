@@ -1,9 +1,10 @@
 custom-shader = shaders/cursor_warp.glsl
 
+term = xterm-256color
 # --- Typography & Layout ---
 adjust-underline-position = 40%
 adjust-underline-thickness = -60%
-adjust-cell-height = 35%
+adjust-cell-height = 15%
 
 font-size = 13
 font-thicken = true
@@ -14,8 +15,9 @@ shell-integration = zsh
 shell-integration-features = no-cursor
 
 cursor-style = block
+cursor-style-blink = false
 unfocused-split-opacity = 0.55
-split-divider-color = #e6b450
+split-divider-color = #474747
 
 # Forces bold text to use the bright color palette
 bold-is-bright = true
@@ -56,8 +58,8 @@ mouse-hide-while-typing = true
 
 confirm-close-surface = false
 window-decoration = auto
-window-padding-x = 8
-window-padding-y = 8
+window-padding-x = 10
+window-padding-y = 10
 window-padding-balance = true
 
 macos-option-as-alt = true

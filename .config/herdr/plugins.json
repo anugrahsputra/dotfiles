@@ -1,0 +1,52 @@
+[
+  {
+    "plugin_id": "zenbu-labs.terminal-browser",
+    "name": "Terminal Browser",
+    "version": "0.1.1",
+    "min_herdr_version": "0.8.2",
+    "description": "Open a browser inside herdr",
+    "manifest_path": "/Users/downormal/.config/herdr/plugins/github/zenbu-labs.terminal-browser-af24e09053e7/herdr-plugin/herdr-plugin.toml",
+    "plugin_root": "/Users/downormal/.config/herdr/plugins/github/zenbu-labs.terminal-browser-af24e09053e7/herdr-plugin",
+    "enabled": true,
+    "platforms": [
+      "linux",
+      "macos"
+    ],
+    "build": [
+      {
+        "platforms": [
+          "linux",
+          "macos"
+        ],
+        "command": [
+          "bash",
+          "-c",
+          "set -o pipefail; curl -fsSL https://terminal-browser.sh/install | bash"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "open-split",
+        "title": "Open terminal-browser (right split)",
+        "description": "Split the focused pane and open terminal-browser in it",
+        "contexts": [
+          "global"
+        ],
+        "command": [
+          "bash",
+          "open-split.sh"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "github",
+      "owner": "zenbu-labs",
+      "repo": "terminal-browser",
+      "subdir": "herdr-plugin",
+      "resolved_commit": "8bf4675e4b146b971e735263eaf455ec366b426f",
+      "managed_path": "/Users/downormal/.config/herdr/plugins/github/zenbu-labs.terminal-browser-af24e09053e7",
+      "installed_unix_ms": 1788407654543
+    }
+  }
+]

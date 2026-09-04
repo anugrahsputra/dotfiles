@@ -1,0 +1,206 @@
+onboarding = false
+# herdr configuration — mirrors ~/.tmux.conf, themed after koda.nvim
+# Full option reference: herdr --default-config
+# Previous file: config.toml.bak
+
+# ── Theme: koda (dark) ──────────────────────────────
+# Source palette: koda.nvim/lua/koda/palette/dark.lua
+# Near-black bg, grayscale text, white accent (matches tmux borders).
+[theme]
+name = "vesper"          # base; every token below is overridden
+
+[theme.custom]
+panel_bg      = "reset"      # keep ghostty's background-opacity = 0.9
+sidebar_bg    = "#101010"    # koda bg
+active_row_bg = "#272727"    # koda line
+selection_bg  = "#272727"    # matches ghostty selection-background
+surface0      = "#272727"    # koda line
+surface1      = "#474747"    # koda dim
+surface_dim   = "#191919"    # step between bg and line
+overlay0      = "#474747"    # koda dim
+overlay1      = "#50585d"    # koda comment
+text          = "#ffffff"    # koda emphasis
+subtext0      = "#b0b0b0"    # koda fg
+accent        = "#ffffff"    # tmux: pane-active-border / popup-border
+blue          = "#8ebeec"    # koda info
+teal          = "#5abfb5"    # koda cyan
+green         = "#86cd82"    # koda success
+yellow        = "#d9ba73"    # koda warning / const
+peach         = "#ff5733"    # koda orange
+red           = "#ff7676"    # koda danger
+mauve         = "#f2a4db"    # koda pink
+
+# ── Terminal ────────────────────────────────────────
+[terminal]
+default_shell = "/bin/zsh"   # tmux: set-option -g default-shell /bin/zsh
+shell_mode = "login"
+new_cwd = "follow"
+
+# ── Keys ────────────────────────────────────────────
+# tmux bindings win where they collide with herdr defaults; the herdr action
+# that lost its key is moved and noted below.
+[keys]
+prefix = "ctrl+t"                    # tmux: prefix C-t
+
+reload_config = "prefix+r"           # tmux: bind r source-file
+detach = "prefix+d"                  # tmux default
+rename_tab = "prefix+comma"          # tmux: prefix , rename-window
+
+# Moved out of the way of the sessionizer popups below.
+resize_mode = "prefix+shift+z"       # was prefix+r
+close_workspace = "prefix+shift+q"   # was prefix+shift+d
+rename_workspace = "prefix+shift+m"  # was prefix+shift+w
+rename_pane = "prefix+shift+y"       # was prefix+shift+p
+goto = "prefix+enter"                # was prefix+g, which lazygit took
+
+# ── Worktrees ───────────────────────────────────────
+# new_worktree stays on the herdr default (prefix+shift+g).
+open_worktree = "prefix+shift+o"     # unset by default
+remove_worktree = "prefix+shift+e"   # unset by default; opens confirmation
+
+# ── Session (workspace) navigation ──────────────────
+workspace_picker = "prefix+w"        # tmux: prefix w choose-tree
+previous_workspace = "prefix+u"      # unbound in herdr by default
+next_workspace = "prefix+i"
+switch_workspace = "prefix+shift+1..9"
+
+# tmux: bind h/j/k/l select-pane
+focus_pane_left  = "prefix+h"
+focus_pane_down  = "prefix+j"
+focus_pane_up    = "prefix+k"
+focus_pane_right = "prefix+l"
+
+# Swap panes in the layout (unbound by default in herdr)
+swap_pane_left  = "prefix+alt+h"
+swap_pane_down  = "prefix+alt+j"
+swap_pane_up    = "prefix+alt+k"
+swap_pane_right = "prefix+alt+l"
+
+# tmux: bind -r H/J/K/L resize-pane
+resize_pane_left  = "prefix+shift+h"
+resize_pane_down  = "prefix+shift+j"
+resize_pane_up    = "prefix+shift+k"
+resize_pane_right = "prefix+shift+l"
+
+# ── Popups (tmux display-popup ports, 70% x 80%) ────
+# tmux: bind g display-popup lazygit
+[[keys.command]]
+key = "prefix+g"
+type = "popup"
+command = "lazygit"
+width = "70%"
+height = "80%"
+description = "lazygit"
+
+# tmux: bind t display-popup zsh
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+command = "zsh"
+width = "70%"
+height = "80%"
+description = "shell"
+
+# tmux: bind f/D/R/W/F/P/S/T tmux-sessionizer <dir>
+# herdr-sessionizer focuses an existing workspace or creates one.
+[[keys.command]]
+key = "prefix+f"
+type = "popup"
+command = "~/.local/bin/herdr-sessionizer"
+width = "70%"
+height = "80%"
+description = "Dev"
+
+[[keys.command]]
+key = "prefix+shift+d"
+type = "popup"
+command = "~/.local/bin/herdr-sessionizer ~/Dev/Notes"
+width = "70%"
+height = "80%"
+description = "Notes"
+
+[[keys.command]]
+key = "prefix+shift+r"
+type = "popup"
+command = "~/.local/bin/herdr-sessionizer ~/Dev/research"
+width = "70%"
+height = "80%"
+description = "research"
+
+[[keys.command]]
+key = "prefix+shift+w"
+type = "popup"
+command = "~/.local/bin/herdr-sessionizer ~/Dev/work"
+width = "70%"
+height = "80%"
+description = "work"
+
+[[keys.command]]
+key = "prefix+shift+f"
+type = "popup"
+command = "~/.local/bin/herdr-sessionizer ~/Dev/freelance"
+width = "70%"
+height = "80%"
+description = "freelance"
+
+[[keys.command]]
+key = "prefix+shift+p"
+type = "popup"
+command = "~/.local/bin/herdr-sessionizer ~/Dev/personal"
+width = "70%"
+height = "80%"
+description = "personal"
+
+[[keys.command]]
+key = "prefix+shift+s"
+type = "popup"
+command = "~/.local/bin/herdr-sessionizer ~/Dev/technical-test"
+width = "70%"
+height = "80%"
+description = "technical-test"
+
+[[keys.command]]
+key = "prefix+shift+t"
+type = "popup"
+command = "~/.local/bin/herdr-sessionizer ~/.config/nvim"
+width = "70%"
+height = "80%"
+description = "nvim config"
+
+# tmux: bind a new-window with the python venv activated
+[[keys.command]]
+key = "prefix+a"
+type = "pane"
+command = "zsh -lc 'source ~/development/backend-thing/python-proj/venv/bin/activate && exec zsh'"
+description = "python venv"
+
+# ── UI ──────────────────────────────────────────────
+[ui]
+hide_tab_bar_when_single_tab = false
+sidebar_start_collapsed = true     # takes effect on next launch
+sidebar_collapsed_mode = "hidden"  # zero width; "compact" keeps a status rail
+tab_bar_position = "top"     # tmux: set-option -g status-position top
+mouse_capture = true         # tmux: set -g mouse on
+copy_on_select = true
+pane_borders = true
+pane_gaps = true
+accent = "#ffffff"
+
+# tmux status-right: clock. Git branch lives in the sidebar space rows.
+tab_bar_right = [
+  { type = "zoom" },
+  { type = "datetime", format = "%H:%M" },
+]
+tab_bar_right_separator = "  "
+
+# tmux status-left showed "⌘ #S"; the sidebar covers it.
+window_title = "{workspace}: {tab}"
+
+show_agent_labels_on_pane_borders = true
+[ui.sidebar.spaces]
+rows = [["state_icon", "workspace"], ["branch", "git_status"]]
+
+[server]
+
+[experimental]
+pane_history = false
